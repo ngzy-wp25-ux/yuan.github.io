@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Testing & Evaluation-Solace Counselling</title>
+        <link rel="stylesheet" href="globalstyle.css">
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="photo/logo.jpg" alt="Solace Logo" class="header-logo">
+            </a>
+            <h1>Solace Counselling</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul class="submenu">
+                        <li><a href="adultservices.html">Adult Services</a></li>
+                        <li><a href="youthservices.html">Youth Services</a></li>
+                        <li><a href="testingservices.html">Testing & Evaluation Services</a></li>
+                        <li><a href="details.html">Therapy Details</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="feedback-list.html">Feedback</a>
+                    <ul class="submenu">
+                        <li><a href="feedback.html">Give Your Feedback</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="appointment.html">Appointment</a>
+                    <ul class="submenu">
+                        <li><a href="adultbooking.html">Adult Services Booking</a></li>
+                        <li><a href="youthbooking.html">Youth Services Booking</a></li>
+                        <li><a href="testingbooking.html">Testing & Evaluation Booking</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <h1>Book Your Assessment</h1>
+                <p>Please provide details below to schedule your initial consultation for Testing & Evaluation services. This initial session determines the appropriate assessment protocol.</p>
+
+                <form action="thankyou.html">
+                    <h3>1. Personal & Contact Information</h3>
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" placeholder="Enter your full name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="e.g., 012-3456789" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Age Group of Client</label>
+                            <select name="age_group" required>
+                                <option value="" disabled selected>Select Age Group</option>
+                                <option value="youth">Youth (Under 18)</option>
+                                <option value="adult">Adult (18+)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3>2. Assessment Details</h3>
+                    <label>Primary Reason for Testing/Evaluation</label>
+                    <select name="assessment_reason" required>
+                        <option value="" disabled selected>Select Primary Concern</option>
+                        <option value="adhd">ADHD / Concentration Issues</option>
+                        <option value="autism">Autism Spectrum Disorder (ASD)</option>
+                        <option value="learning">Learning Disabilities / Psychoeducational</option>
+                        <option value="diagnostic">General Diagnostic Clarity (Anxiety, Depression, etc.)</option>
+                        <option value="other">Other / Not Listed</option>
+                    </select>
+                    
+                    <label>Preferred Date for Initial Consultation</label>
+                    <input type="date" name="date" required>
+                    
+                    <label>Briefly Describe Your Needs</label>
+                    <textarea name="reason" placeholder="What are you hoping to understand through this assessment?"></textarea>
+
+                    <button type="submit">Request Assessment Consultation</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; Solace Counselling-
+                <a href="contact.html">Contact Us</a>
+                . All rights reserved
+            </p>
+        </footer>
+
+    </body>
+</html>
